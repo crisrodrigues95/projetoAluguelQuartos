@@ -55,7 +55,7 @@ public class Morador {
     @Column (name = "pet", nullable = false)
     private Boolean pet;
 
-    @Column (name = "quantPet", nullable = true)
+    @Column (name = "quantPet")
     private Integer quantPet;
 
     @Column (name = "vegano", nullable = false)
@@ -64,10 +64,10 @@ public class Morador {
     @Column (name = "vegetariano", nullable = false)
     private Boolean vegetariano;
     
-    @Column (name = "faculdade", nullable = true, length = 200)
+    @Column (name = "faculdade", length = 200)
     private String faculdade;
 
-    @Column (name = "trabalho", nullable = true, length = 200)
+    @Column (name = "trabalho", length = 200)
     private String trabalho;
     
     @Column (name = "temCarro", nullable = false)

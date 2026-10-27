@@ -71,10 +71,10 @@ public class Locador {
     @Column(length = 200)
     private String trabalho;
 
-    @Column(name = "temCarro", nullable = true)
+    @Column(name = "temCarro")
     private Boolean temCarro;
 
-    @Column(name = "temVeiculo", nullable = true)
+    @Column(name = "temVeiculo")
     private Boolean temVeiculo;
 
     @Column(name = "cozinha", nullable = false)

@@ -27,7 +27,7 @@ public class Estabelecimento {
     @Column (nullable = false, length = 200)
     private String endereco;
 
-    @Column(nullable = true, length = 50 )
+    @Column(length = 50 )
     private String complemento;
 
     @Column (nullable = false, length = 200)
@@ -45,7 +45,7 @@ public class Estabelecimento {
     @Column (nullable = false)
     private Float tamanhoCasa;
 
-    @Column (nullable = true, columnDefinition = "TEXT")
+    @Column (columnDefinition = "TEXT")
     private String descricao;
 
     @Column (nullable = false)
@@ -63,7 +63,7 @@ public class Estabelecimento {
     @Column (nullable = false)
     private Integer lavanderias;
 
-    @Column (nullable = true)
+    @Column
     private Boolean apet;
 
     @Column (nullable = false)
@@ -73,7 +73,7 @@ public class Estabelecimento {
     @JoinColumn(name = "idLocador", referencedColumnName = "idLocador")
     private Locador locador;
 
-    @Column (nullable = true, length = 1000)
+    @Column (length = 1000)
     private String fotoPerfilCasa;
 
     public Long getIdEstabelecimento() {

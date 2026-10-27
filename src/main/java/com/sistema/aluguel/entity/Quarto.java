@@ -36,7 +36,7 @@ public class Quarto {
     @Column(name = "negociavel", nullable = false)
     private Boolean negociavel;
 
-    @Column(name = "descricao", nullable = true, columnDefinition = "TEXT")
+    @Column(name = "descricao", columnDefinition = "TEXT")
     private String descricao;
 
     @Column(name = "quantidadeTomada", nullable = false)
@@ -50,11 +50,11 @@ public class Quarto {
     private Estabelecimento estabelecimento;
 
     @Enumerated (EnumType.STRING)
-    @Column(name = "disponibilidade", nullable = true, length = 20)
+    @Column(name = "disponibilidade", length = 20)
     private Disponibilidade disponibilidade;
 
 
-    @Column (name = "fotoPerfilQuarto", nullable = true, length = 1000)
+    @Column (name = "fotoPerfilQuarto", length = 1000)
     private String fotoPerfilQuarto;
 
     public Long getIdQuarto() {
