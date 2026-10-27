@@ -71,6 +71,10 @@ O Hibernate está configurado para atualizar o esquema do banco automaticamente 
 - **Morador:** informações de perfil de quem ocupa um quarto.
 - **Foto:** localização de imagens associadas a um quarto ou estabelecimento.
 
+### Diagrama Entidade-Relacionamento (MER)
+
+![Diagrama MER do projeto](docs/MER.png)
+
 ## Estrutura do projeto
 
 ```text
@@ -159,6 +163,10 @@ Hibernate is configured to update the database schema automatically (`ddl-auto=u
 - **Quarto (Room):** room details, price, and availability, linked to a property.
 - **Morador (Resident):** profile information for someone occupying a room.
 - **Foto (Photo):** image location associated with a room or property.
+
+### Entity-Relationship Diagram (ERD)
+
+![Project entity-relationship diagram](docs/MER.png)
 
 ## Project structure
 
