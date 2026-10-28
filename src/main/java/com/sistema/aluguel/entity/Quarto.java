@@ -13,13 +13,19 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
 @Table(name = "quarto")
+@Getter
+@Setter
 public class Quarto {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Setter(AccessLevel.NONE)
     private Long idQuarto;
 
     @Column(name = "tamanhoQuarto", nullable = false)
@@ -54,92 +60,5 @@ public class Quarto {
 
     @Column (name = "fotoPerfilQuarto", length = 1000)
     private String fotoPerfilQuarto;
-
-    public Long getIdQuarto() {
-        return idQuarto;
-    }
-
-    public void setIdQuarto(Long idQuarto) {
-        this.idQuarto = idQuarto;
-    }
-
-    public Float getTamanhoQuarto() {
-        return tamanhoQuarto;
-    }
-
-    public void setTamanhoQuarto(Float tamanhoQuarto) {
-        this.tamanhoQuarto = tamanhoQuarto;
-    }
-
-    public BigDecimal getValor() {
-        return valor;
-    }
-
-    public void setValor(BigDecimal valor) {
-        this.valor = valor;
-    }
-
-    public Boolean getMobiliado() {
-        return mobiliado;
-    }
-
-    public void setMobiliado(Boolean mobiliado) {
-        this.mobiliado = mobiliado;
-    }
-
-    public Boolean getNegociavel() {
-        return negociavel;
-    }
-
-    public void setNegociavel(Boolean negociavel) {
-        this.negociavel = negociavel;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
-    public Integer getQuantidadeTomada() {
-        return quantidadeTomada;
-    }
-
-    public void setQuantidadeTomada(Integer quantidadeTomada) {
-        this.quantidadeTomada = quantidadeTomada;
-    }
-
-    public Boolean getArCondicionado() {
-        return arCondicionado;
-    }
-
-    public void setArCondicionado(Boolean arCondicionado) {
-        this.arCondicionado = arCondicionado;
-    }
-
-    public Estabelecimento getEstabelecimento() {
-        return estabelecimento;
-    }
-
-    public void setEstabelecimento(Estabelecimento estabelecimento) {
-        this.estabelecimento = estabelecimento;
-    }
-
-    public Disponibilidade getDisponibilidade() {
-        return disponibilidade;
-    }
-
-    public void setDisponibilidade(Disponibilidade disponibilidade) {
-        this.disponibilidade = disponibilidade;
-    }
-
-    public String getFotoPerfilQuarto() {
-        return fotoPerfilQuarto;
-    }
-
-    public void setFotoPerfilQuarto(String fotoPerfilQuarto) {
-        this.fotoPerfilQuarto = fotoPerfilQuarto;
-    }
+    
 }

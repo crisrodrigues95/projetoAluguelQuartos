@@ -10,13 +10,20 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.Setter;
+
 @Entity
 @Table(name = "foto")
+@Getter
+@Setter
 public class Foto{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idFoto")
+    @Setter(AccessLevel.NONE)
     private Long idFoto;
 
     @Column(length = 1000, nullable = false)
@@ -29,36 +36,4 @@ public class Foto{
     @ManyToOne
     @JoinColumn(name = "idEstabelecimento", referencedColumnName = "idEstabelecimento")
     private Estabelecimento estabelecimento;
-
-    public Long getIdFoto() {
-        return idFoto;
-    }
-
-    public void setIdFoto(Long idFoto) {
-        this.idFoto = idFoto;
-    }
-
-    public String getLocal() {
-        return local;
-    }
-
-    public void setLocal(String local) {
-        this.local = local;
-    }
-
-    public Quarto getQuarto() {
-        return quarto;
-    }
-
-    public void setQuarto(Quarto quarto) {
-        this.quarto = quarto;
-    }
-
-    public Estabelecimento getEstabelecimento() {
-        return estabelecimento;
-    }
-
-    public void setEstabelecimento(Estabelecimento estabelecimento) {
-        this.estabelecimento = estabelecimento;
-    }
 }
