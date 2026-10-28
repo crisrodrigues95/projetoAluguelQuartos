@@ -30,14 +30,14 @@ public class Locador {
     private String nomeCompleto;
 
     
-    @Column(name = "cpf", nullable = false, length = 20)
+    @Column(name = "cpf", nullable = false, unique = true, length = 20)
     @CPF
     private String cpf;
 
-    @Column(name = "telefone", nullable = false, length = 15)
+    @Column(name = "telefone", nullable = false, unique = true, length = 15)
     private String telefone;
 
-    @Column(name = "email", nullable = false, length = 150)
+    @Column(name = "email", nullable = false, unique = true, length = 150)
     @Email
     private String email;
 

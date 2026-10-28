@@ -4,6 +4,8 @@ Aplicação Java para modelagem de dados de aluguel de quartos e imóveis, com e
 
 > **Estado atual:** o projeto contém o modelo de domínio e a configuração inicial do Spring Boot. Ainda não há controladores ou rotas HTTP implementados.
 
+> **Lembrete:** quando a API for implementada e testada, adicionar questões de segurança à checklist de testes.
+
 ## Tecnologias
 
 - Java 21
@@ -96,6 +98,8 @@ src/
 A Java application for modeling room and property rentals, with entities for landlords, residents, properties, rooms, and photos.
 
 > **Current status:** the project contains the domain model and the initial Spring Boot configuration. HTTP controllers and routes have not been implemented yet.
+
+> **Reminder:** when the API is implemented and tested, add security questions to the testing checklist.
 
 ## Technologies
 

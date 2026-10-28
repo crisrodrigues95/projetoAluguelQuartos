@@ -28,13 +28,13 @@ public class Morador {
     @Column (name = "nomeCompleto", nullable = false, length = 150)
     private String nomeCompleto;
 
-    @Column (name = "cpf", nullable = false, length = 20)
+    @Column (name = "cpf", nullable = false, unique = true, length = 20)
     private String cpf;
 
-    @Column (name = "telefone", nullable = false, length = 15)
+    @Column (name = "telefone", nullable = false, unique = true, length = 15)
     private String telefone;
 
-    @Column (name = "email", nullable = false, length = 150)
+    @Column (name = "email", nullable = false, unique = true, length = 150)
     private String email;
 
     @Column (name = "senha", nullable = false, length = 12)
